@@ -10,10 +10,10 @@ int main(void)
 	char i;
 
 	i = 'f';
-        while
-       	       (i <= 'k');
-			putchar(i)
-			i++;
+        while (i <= 'k')
+	{
+		putchar(i);
+		i++;
 	}
 	putchar("\n");
 	return (0);
