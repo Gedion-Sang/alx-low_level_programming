@@ -8,15 +8,10 @@
 int main(void)
 {
 	char i;
-	char j;
 
 	for (i = 'f'; i <= 'k'; i++)
 	{
 		putchar(i);
-	}
-	for (j = 'F'; j <= 'K'; j++)
-	{
-		putchar(j);
 	}
 	putchar("\n");
 	return (0);
