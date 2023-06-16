@@ -2,7 +2,7 @@
 
 /**
  *main - You can only use the putchar function
- *Return:0 
+ *Return:0
  */
 
 int main(void)
@@ -14,6 +14,7 @@ int main(void)
 		if (i == 'e' || i == 'q')
 			continue;
 		putchar(i);
+		i++;
 	}
 	putchar('\n');
 	return (0);
