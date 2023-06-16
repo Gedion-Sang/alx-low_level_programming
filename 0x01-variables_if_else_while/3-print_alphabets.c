@@ -7,13 +7,16 @@
 
 int main(void)
 {
-	char i;
+	int a = 99;
+	int b = 67;
 
-	i = 'f';
-        while (i <= 'k')
+	while (a <= 122)
 	{
-		putchar(i);
-		i++;
+		putchar(a);
+	}
+	while (b <= 90)
+	{
+		putchar(b);
 	}
 	putchar("\n");
 	return (0);
