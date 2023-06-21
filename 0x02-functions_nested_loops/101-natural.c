@@ -6,13 +6,13 @@
  */
 int main(void)
 {
-	int j, k;
+	int a, b;
 
-	for (j = 1; j < 1024; j++)
+	for (a = 1; a < 1024; a++)
 	{
-		if ((j % 3) == 0 || (k % 5) == 0)
-			k += j;
+		if ((a % 3) == 0 || (b % 5) == 0)
+			b += a;
 	}
-	printf("%d\n", k);
+	printf("%d\n", b);
 	return (0);
 }
