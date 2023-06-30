@@ -9,20 +9,18 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int count = 0, count2 = 0;
+	int string_length, i;
 
-	while (*(dest + count) != '\0')
+	string_length = 0;
+	while (dest[string_length] != '\0')
 	{
-		count++;
+		string_length++;
 	}
+	for (i = 0; i < n && src[i] != '\0'; i++, string_length++)
+	{
+		dest[string_length] = src[i];
+	}
+	dest[string_length] = '\0';
 
-	while (count2 >= 0)
-	{
-		*(dest + count) = *(src + count2);
-		if (*(src + count2) == '\0')
-			break;
-		count++;
-		count2++;
-	}
 	return (dest);
 }
