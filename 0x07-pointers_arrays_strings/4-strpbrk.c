@@ -5,17 +5,19 @@
  * @accept: set of bytes to be searched for
  * Return: 0
  */
+
 char *_strpbrk(char *s, char *accept)
 {
-                int k;
-                while (*s)
-                {
-                        for (k = 0; accept[k]; k++)
-                        {
-                        if (*s == accept[k])
-                        return (s);
-                        }
-                s++;
-                }
-        return ('\0');
+	int a;
+
+	while (*s)
+	{
+		for (a = 0; accept[a]; a++)
+		{
+			if (*s == accept[a])
+			return (s);
+		}
+		s++;
+	}
+	return ('\0');
 }
