@@ -4,9 +4,9 @@
  * main - program that prints all arguments it receives
  * @argv: argument array
  * @argc: number of arguments
- * Return : 0
+ * Return: 0
  */
-int main(int argc, char *argv)
+int main(int argc, char *argv[])
 {
 	int i;
 
